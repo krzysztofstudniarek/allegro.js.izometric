@@ -1,0 +1,19 @@
+#game_canvas { 
+	border:1px solid #888; 
+	margin: 10px auto; 
+	display:block; 
+	width: 640px;
+	height: 480px;
+}
+ 
+#debug { 
+	text-align:left; 
+	width:620px; 
+	height:460px; 
+	border:1px solid #888; 
+	font: 16px monospace; 
+	overflow: auto; 
+	background-color:#f8fcff; 
+	margin: 10px auto;
+	padding:10px; 
+}
