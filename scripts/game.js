@@ -49,7 +49,6 @@ function draw()
 function update()
 {	
 
-	
 	if(inGame){
 		maxHeight = 0;
 		cells.forEach(function(value){
@@ -74,9 +73,9 @@ function update()
 function controls ()
 {
 	if(inGame){
-		if(mouse_b){
+		if(mouse_pressed){
 			cells.forEach(function(value){
-				if(distance(mouse_x, mouse_y, value.x, value.y + value.height * 25) <=17 && value.height < 0){
+				if(distance(mouse_x, mouse_y, value.x, value.y + value.height * 25) <17 && value.height < 0){
 					value.height++;
 					score += 10;
 				}
